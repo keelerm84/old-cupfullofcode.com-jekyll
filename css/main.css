@@ -418,5 +418,8 @@ a:visited { color: #859900; }
 
 }
 
-.social i { color: #586e75; font-size: 24px; }
+.social i { color: #586e75; font-size: 24px; padding-right: 3px; }
 .fa-rss { color: #cb4b16; }
+
+.pagination { float:left; }
+.rss-subscribe { float: right; }

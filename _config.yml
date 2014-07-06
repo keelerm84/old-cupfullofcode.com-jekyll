@@ -11,3 +11,4 @@ github_username:  keelerm84
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+paginate: 5
