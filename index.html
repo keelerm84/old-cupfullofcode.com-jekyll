@@ -10,8 +10,6 @@ layout: default
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <p>{{ post.excerpt }}</p>
-
-        <p class="read-more"><a href="">Continue reading</a>&nbsp;<i class="icon-circle-arrow-right icon-large"></i></p>
       </li>
     {% endfor %}
   </ul>
