@@ -33,8 +33,8 @@ different developer, precious time is wasted deciphering this twisted logic.
 This is where [De Morgan’s Laws](http://en.wikipedia.org/wiki/De_Morgan) come
 in handy. From Wikipedia:
 
-“The negation of a conjunction is the disjunction of the negations.” and
-“The negation of a disjunction is the conjunction of the negations.“
+>“The negation of a conjunction is the disjunction of the negations.” \\
+>“The negation of a disjunction is the conjunction of the negations.“
 
 Great, so what does that mean? Basically, it means that if you have two
 conditions — `p` and `q` — and you apply the negation to the statement `p and
