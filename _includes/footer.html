@@ -3,8 +3,11 @@
   <div class="wrap">
 
     <div class="footer-col-1 column">
+      <h1>Categories</h1>
       <ul>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% for category in site.sorted_categories %}
+          <li><a href="/categories/{{ category | first }}" title="{{category | first}}">{{ category | first | capitalize_all }}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
