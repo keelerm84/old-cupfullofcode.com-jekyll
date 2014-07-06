@@ -1,0 +1,13 @@
+# Site settings
+title: Matthew M. Keeler
+email: keelerm@tortugas-llc.com
+description: "My little corner of the web."
+baseurl: ""
+url: "http://matthewmkeeler.com"
+twitter_username: keelerm84
+github_username:  keelerm84
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
