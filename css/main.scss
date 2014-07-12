@@ -257,7 +257,7 @@ a {
     padding-left: 0;
   }
 
-/* terminal */
+  /* terminal */
   pre.terminal {
     border: 1px solid #000;
     background-color: #333;
@@ -268,8 +268,13 @@ a {
 
     code { background-color: #333; }
   }
-}
 
+  p {
+    img { padding: 20px 0; }
+  }
+
+  iframe { padding: 20px 0; }
+}
 
 /* media queries */
 /* ----------------------------------------------------------*/
