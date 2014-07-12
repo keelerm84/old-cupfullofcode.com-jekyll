@@ -41,6 +41,7 @@ quickly grew tired of. I had to:
 4. C-x b *scratch* to switch over to my scratch buffer
 5. C-y to paste the journal contents in
 6. Remove any additional notes I had, strip out the top level headers and time stamps, and then add my plan for the current day.
+
 What a bunch of nonsense! I certainly wasn't going to do that 5 days a week for the rest of my career.
 
 ## Elisp to the Rescue

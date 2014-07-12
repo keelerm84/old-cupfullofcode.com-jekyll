@@ -41,11 +41,6 @@ Objective:  To expand my knowledge base while developing innovative applications
 * 1st degree black belt, Tae Kwon Do
 * Phi Kappa Phi award recipient
 
-### Find Me @
-* [mojoLive](http://mojolive.com/profile/keelerm84)
-* [Twitter](http://twitter.com/keelerm84)
-* [GitHub](http://github.com/keelerm84)
-
 ## Education
 
 ### Wichita State University 2013 - Present

@@ -1,0 +1,101 @@
+$primary-color: #859900;
+$muted-color: #657b83;
+$border-color: #ccc;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-image: url(/assets/images/crossword.png);
+  font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: $muted-color;
+  text-align: justify;
+  margin-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-align: left;
+}
+
+a, a:visited, a:hover {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+ul, ol { list-style-position: inside; }
+
+pre {
+    background-color: inherit;
+    border: none;
+
+    code { color: $muted-color; }
+}
+
+.container { padding-bottom: 2em; }
+
+.muted { color: $muted-color; }
+
+.sidebar {
+    a {
+        color: $muted-color;
+    }
+}
+
+.pagination {
+    float: left;
+    margin: 0px;
+
+    .active {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    span, a {
+        padding: 2px 5px;
+    }
+}
+.rss-subscribe { float: right; }
+.fa-rss { color: #cb4b16; }
+
+.well {
+    border-radius: 0px;
+    border: 1px solid $border-color;
+    box-shadow: 2px 2px 0 #e6e9ed;
+
+    h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+}
+
+ul.posts {
+   list-style-type: none;
+
+   li { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px inset $border-color; }
+
+  .post-link {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1;
+    display: inline-block;
+    padding: 15px 0px;
+  }
+
+  .post-date {
+    display: block;
+    font-size: 15px;
+    color: #818181;
+  }
+}
+
+.post-content {
+    img, iframe { padding: 1.5em 0; }
+}
+
+.navbar-default { border: 1px solid $border-color; }

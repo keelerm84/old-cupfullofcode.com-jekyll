@@ -3,17 +3,24 @@
 
   {% include head.html %}
 
-    <body>
+  <body>
 
-    {% include header.html %}
+    {% include navigation.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          {{ content }}
+        </div>
+
+        <div class="col-lg-4 sidebar">
+          {% include sidebar.html %}
+        </div>
       </div>
+
     </div>
 
-    {% include footer.html %}
-
-    </body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
 </html>

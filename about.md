@@ -58,17 +58,3 @@ Even though I may not currently possess all the experience necessary to "run
 with the big dogs", I am confident my eagerness to learn, coupled with my
 proven ability to quickly pick up new technologies, makes me well suited for
 any position.
-
-<div id="octocard"></div>
-<script>
-  OCTOCARD = {
-    name: 'keelerm84',
-    element: 'octocard',
-    modules: 'base,details,stats,repos,orgs,eventsStatis',
-    reposNum: 3,
-    reposIgnored: 'symfony-blog,SupportMessage,External-Drive-Backup-Script',
-    orgsNum: 3,
-    noFooter: true
-  };
-</script>
-<script src="http://nodejs.in/octocard/bin/octocard.js"></script>

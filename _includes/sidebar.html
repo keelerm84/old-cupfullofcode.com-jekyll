@@ -1,12 +1,55 @@
-<section id="left">
-  <h1>Posts</h1>
+<div class="well">
+  <h4>Blog Search</h4>
+  <div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+  <!-- /input-group -->
+</div>
+<!-- /well -->
+<div class="well">
+  <h4>Browse By Category</h4>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row">
+        {% for category in site.sorted_categories %}
+        <div class="col-lg-6">
+          <a class="category-link" href="{{ "/categories/" | prepend: site.baseurl }}{{ category | first }}">{{ category | first | capitalize }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /well -->
+<div class="well">
+  <h4>Find Me @</h4>
+  <div class="row">
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="http://twitter.com/keelerm84"><i class="fa fa-twitter"></i></a></div>
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="http://github.com/keelerm84"><i class="fa fa-github"></i></a></div>
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="http://stackoverflow.com/users/859409/keelerm"><i class="fa fa-stack-overflow"></i></a></div>
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="http://www.youtube.com/user/keelerm84ify"><i class="fa fa-youtube-play"></i></a></div>
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="https://plus.google.com/+MatthewKeeler/"><i class="fa fa-google-plus"></i></a></div>
+    <div class="col-lg-1 col-sm-1 col-xs-1 social-links"><a href="http://www.linkedin.com/in/keelerm84"><i class="fa fa-linkedin"></i></a></div>
+  </div>
+</div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+
+<div id="octocard"></div>
+<script>
+  OCTOCARD = {
+    name: 'keelerm84',
+    element: 'octocard',
+    modules: 'base,details,stats,repos,orgs,eventsStatis',
+    reposNum: 3,
+    reposIgnored: 'symfony-blog,SupportMessage,External-Drive-Backup-Script',
+    orgsNum: 3,
+    noFooter: true
+  };
+</script>
+<script src="http://nodejs.in/octocard/bin/octocard.js"></script>
+<!-- /well -->
