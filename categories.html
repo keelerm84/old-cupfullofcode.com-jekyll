@@ -1,0 +1,22 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+<ul class="categories">
+  {% for category in site.sorted_categories %}
+  <li>
+    <a class="category-link" href="{{ category | first }}">{{ category | first | capitalize }}</a>
+    <span class="rss-subscribe">
+      <i class="fa fa-rss"></i>
+      Subscribe
+      <a href="{{ "/categories/" | prepend: site.baseurl }}{{ category | first }}/atom.xml">
+        via RSS
+      </a>
+    </span>
+    <p class="post-count">There are currently {{ category | last | size }} post(s)</p>
+
+  </li>
+  {% endfor %}
+</ul>

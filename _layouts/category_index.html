@@ -11,3 +11,11 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+
+<p class="rss-subscribe">
+  <i class="fa fa-rss"></i>
+  Subscribe
+  <a href="{{ "/categories/" | prepend: site.baseurl }}{{ page.category }}/atom.xml">
+    via RSS
+  </a>
+</p>

@@ -3,16 +3,11 @@
   <div class="wrap">
 
     <div class="footer-col-1 column">
-      <h1>Categories</h1>
-      <ul>
-        {% for category in site.sorted_categories %}
-          <li><a href="/categories/{{ category | first }}" title="{{category | first}}">{{ category | first | capitalize_all }}</a></li>
-        {% endfor %}
-      </ul>
+      <p><a href="/categories/">Browse by category</a></p>
     </div>
 
     <div class="footer-col-3 column">
-      <p class="text">{{ site.description }}</p>
+      <p>{{ site.description }}</p>
     </div>
 
     <div class="footer-col-2 column social">
