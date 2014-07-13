@@ -1,0 +1,6 @@
+{
+    "title"    : "{{ post.title }}",
+    "category" : "{{ post.category }}",
+    "href"     : "{{ post.url | prepend: site.baseurl }}",
+    "content"  : {{ post.content | markdownify | strip_html | json }}
+}
